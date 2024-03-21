@@ -1,0 +1,14 @@
+print("Welcome to the calculator app")
+print("This calculator divides two numbers that the user enters")
+while True:
+
+    try:
+        InputUno = input()
+        InputDos = input()
+        solution = int(InputUno) / int(InputDos)
+        print(solution)
+        break
+    except:
+        print("You did not give any numbers!! Please try again.")
+
+    print("Good bye!")
