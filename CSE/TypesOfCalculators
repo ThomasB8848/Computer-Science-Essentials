@@ -4,3 +4,26 @@ NumberOneInput = input()
 NumberTwoInput = input()
 solution = int(NumberOneInput) + int(NumberTwoInput)
 print(solution)
+
+print("Welcome to the calculator app")
+print("This calculator divides two numbers that the user enters")
+while True:
+
+    try:
+        InputUno = input()
+        InputDos = input()
+        solution = int(InputUno) / int(InputDos)
+        print(solution)
+        break
+    except:
+        print("You did not give any numbers!! Please try again.")
+
+    print("Good bye!")
+
+print("Welcome to the calculator app")
+print("This calculator multiplies two numbers that the user enters")
+InputOne = input()
+InputTwo = input()
+solution = int(InputOne) * int(InputTwo)
+print(solution)
+
