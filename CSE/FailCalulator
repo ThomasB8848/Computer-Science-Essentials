@@ -1,0 +1,8 @@
+print("This app is meant to compare your current grade to the required grade, which is 60 in order to pass.")
+grade = int(input())
+result = int(grade)
+print ("Your Grade is " + str(result) + "%")
+if int(result) >= 60:
+    print("You Passed")
+else: 
+    print("You failed")
