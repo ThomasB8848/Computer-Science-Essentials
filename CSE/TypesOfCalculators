@@ -1,0 +1,6 @@
+print("Welcome to the calculator app")
+print("This calculator adds two numbers that the user enters")
+NumberOneInput = input()
+NumberTwoInput = input()
+solution = int(NumberOneInput) + int(NumberTwoInput)
+print(solution)
