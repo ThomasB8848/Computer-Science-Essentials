@@ -1,0 +1,17 @@
+passing = 60
+grade = input()
+print("This app is meant to compare your current grade to the required grade to pass.")
+print("enter in order to access calculator")
+grade = int(input())
+result = int(grade)
+print ("Your Grade is " + str(result) + "%")
+if int(result) >= 90:
+    print("You Passed - A")
+elif int(result) >= 80:
+    print("You Passed - B")
+elif int(result) >= 70:
+    print("You Passed - C")
+elif int(result) >= 60:
+    print("You Passed - D")
+else:
+    print("You Failed - F")
