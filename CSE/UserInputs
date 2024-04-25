@@ -1,0 +1,7 @@
+print("Hello!")
+print("Press enter to continue")
+input ("Type message and press enter")
+print("Enter was pressed!")
+x = "enter here"
+message = "test"
+print(message)
