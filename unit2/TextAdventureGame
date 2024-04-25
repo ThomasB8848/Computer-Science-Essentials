@@ -1,0 +1,76 @@
+#Create player
+PlayerProperties = []
+
+while True:
+    data_to_add_to_PlayerData = input("Add data to player")
+
+    if data_to_add_to_PlayerData == "time boost":
+        PlayerProperties.append(data_to_add_to_PlayerData)
+    else:
+        print("finish adding contents to player")
+        break
+
+#Instructions and choice selections
+print("Welcome to the hardcore Multiplayer guessing game")
+print("Heres how to play the game: You need to ask questions in order to advance in the game")
+print("You'll be able to obtain items that will increase your time.")
+print("Below you'll be able to make a selection that will start the game")
+print("For choice one enter 1 twice")
+
+while True:
+    print("Choice 1: Go to a room")
+    print("Choice 2: Check inventory")
+    print("Choice 3: Make a guess")
+    print("Choice 4: Pick up item")
+    print("Choice 5: Remove item")
+    print("Choice 6: Exit game")
+    answer = -1
+    TimeCounter = 15
+    QuestionOne = print("")
+    RoomChoice = int(input("->"))
+    SelectionChoice = int(input("->"))
+    inventory = "time boost, and question destroyer"
+
+    if SelectionChoice == 1:
+        print(RoomChoice)
+
+    elif SelectionChoice == 2:
+        print("Here is the list of items in your inventory.")
+        print(inventory)
+
+    elif SelectionChoice == 3: 
+        print("Make a random guess on a random question.")
+
+    elif SelectionChoice == 4:
+        print("Pick up an item.")
+
+    elif SelectionChoice == 5:
+        print("Get rid of an item.")
+    elif SelectionChoice == 6:
+        print("Thank you for playing the game.")
+        break
+    #Conditional statement for if they are in the right room, then they can advance in the game.
+    if RoomChoice == 1:
+        print("Welcome to room one, here is your question.")
+        print("C=5/9(F - 32)")
+        print("The equation above shows how temperature F, measured in degrees Fahrenheit, relates to a temperature , measured in degrees Celsius. Based on the equation, which of the following must be true?")
+        print("A temperature increase of 1 degree Fahrenheit is equivalent to a temperature increase of 5/9 degrees Celsius.")
+        print("A temperature increase of 1 degree Celsius is equivalent to a temperature increase of 1.8 degrees Fahrenheit.")
+        print("A temperature increase of 5/9 degree Fahrenheit is equivalent to a temperature increase of 1 degree Celsius.")
+        print("A) I only")
+        print("B) II only")
+        print("C) III only")
+        print("D) I and II only")
+        UserAnswer = input("")
+
+    elif RoomChoice == 2:
+        print("Welcome to room two, here is your question.")
+
+        UserAnswer = input("")
+#code rest of room design
+    elif RoomChoice == 3:
+        print("Welcome to room three, here is your question")
+        UserAnswer = input("")
+#code rest of room design
+    else:
+        print("WRONG INPUT, TRY AGAIN!")
