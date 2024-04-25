@@ -27,3 +27,13 @@ InputTwo = input()
 solution = int(InputOne) * int(InputTwo)
 print(solution)
 
+print("This app is meant to calculate the four main types of math operations by a set number of 10.")
+NumberOneInput = input()
+Solution = int(NumberOneInput) + 10
+Solution = int(NumberOneInput) - 10
+Solution = int(NumberOneInput) * 10
+Solution = int(NumberOneInput) / 10
+if int(NumberOneInput) <= 60:
+    print("Your solution is" + str(Solution))
+else:
+    print("Your solution is more than 60")
